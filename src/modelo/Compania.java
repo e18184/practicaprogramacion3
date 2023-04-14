@@ -35,6 +35,7 @@ public class Compania {
                     }
                 }
         }
+        /*esto es una nueva propuesta */
 
         return contarempleados;
     }
