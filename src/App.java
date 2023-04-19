@@ -1,6 +1,7 @@
+
 import modelo.*;
 
-public class App2 {
+public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         /* Pregunta 1 */
@@ -138,18 +139,18 @@ public class App2 {
                 }
             }
             System.out.println("compañia" + vcompania[i].getNombre() + "numero emp:" + contarempleados);
-            for (int i = 0; i < vcompania.length; i++) {
-                if (vcompania[i].contarEmpleados()>5)
+            for (int ix = 0; ix < vcompania.length; ix++) {
+                if (vcompania[ix].contarEmpleados()>5)
             // System.out.println(vcompania[i].getNombre());
             contarempleados = 0;
-            if (vcompania[i].getDepartamento() != null) {
-                for (int j = 0; j < vcompania[i].getDepartamento().length; j++) {
+            if (vcompania[ix].getDepartamento() != null) {
+                for (int jx = 0; jx < vcompania[ix].getDepartamento().length; jx++) {
                     // System.out.println(vcompania[i].getDepartamento()[j].getNombre());
-                    if (vcompania[i].getDepartamento()[j].getEmpleado() != null) {
+                    if (vcompania[ix].getDepartamento()[jx].getEmpleado() != null) {
                         for (int k = 0; k < vcompania[i].getDepartamento()[j].getEmpleado().length; k++) {
-                            System.out.println("nombre comp:" + vcompania[i].getNombre() + "nombre dpto: "
-                                    + vcompania[i].getDepartamento()[j].getNombre() + "emp:"
-                                    + vcompania[i].getDepartamento()[j].getEmpleado()[k].getNombre());
+                            System.out.println("nombre comp:" + vcompania[ix].getNombre() + "nombre dpto: "
+                                    + vcompania[ix].getDepartamento()[jx].getNombre() + "emp:"
+                                    + vcompania[ix].getDepartamento()[jx].getEmpleado()[k].getNombre());
                             contarempleados = contarempleados + 1;
 
                         }
@@ -202,3 +203,4 @@ public class App2 {
 
     }
 }
+*/
