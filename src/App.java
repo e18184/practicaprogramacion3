@@ -83,8 +83,8 @@ public class App {
 
                 for (int j = 0; j < vcompania[i].getDepartamento().length; j++) {
                     for (int k = 0; k < vcompania[i].getDepartamento()[j].getEmpleado().length; k++) {
-                        //(vcompania[i].getDepartamento()[j].getEmpleado()[k].getSexo()==0)
-                        //(vcompania[i].getDepartamento()[j].getEmpleado()[k].getEdad()>65)
+                        // (vcompania[i].getDepartamento()[j].getEmpleado()[k].getSexo()==0)
+                        // (vcompania[i].getDepartamento()[j].getEmpleado()[k].getEdad()>65)
                         if ((vcompania[i].getDepartamento()[j].getEmpleado()[k]) instanceof TiempoParcial) {
                             TiempoParcial th = (TiempoParcial) (vcompania[i].getDepartamento()[j].getEmpleado()[k]);
 
@@ -140,67 +140,64 @@ public class App {
             }
             System.out.println("compañia" + vcompania[i].getNombre() + "numero emp:" + contarempleados);
             for (int ix = 0; ix < vcompania.length; ix++) {
-                if (vcompania[ix].contarEmpleados()>5)
-            // System.out.println(vcompania[i].getNombre());
-            contarempleados = 0;
-            if (vcompania[ix].getDepartamento() != null) {
-                for (int jx = 0; jx < vcompania[ix].getDepartamento().length; jx++) {
-                    // System.out.println(vcompania[i].getDepartamento()[j].getNombre());
-                    if (vcompania[ix].getDepartamento()[jx].getEmpleado() != null) {
-                        for (int k = 0; k < vcompania[i].getDepartamento()[j].getEmpleado().length; k++) {
-                            System.out.println("nombre comp:" + vcompania[ix].getNombre() + "nombre dpto: "
-                                    + vcompania[ix].getDepartamento()[jx].getNombre() + "emp:"
-                                    + vcompania[ix].getDepartamento()[jx].getEmpleado()[k].getNombre());
-                            contarempleados = contarempleados + 1;
-
-                        }
-                    }
-                }
-            }
-            p1[] vectorp1 = new p1[]{};
-            p1 vp1 = new p1();
-
-            if (contarempleados>5) {
-                vp1 = new p1();
-                vp1.setC(vcompania[i]);
-                vp1.setB(true);
-
-            } else {
-                vp1 = new p1();
-                vp1.setC(vcompania[i]);
-                vp1.setB(false);
-
-            }
-            vectorp1[i] = vp1;
-             
-            for (int xi = 0; xi < vectorp1.length; xi++) {
-                // System.out.println(vcompania[i].getNombre());
-                if (vectorp1[xi].getB()){
-                contarempleados = 0;
-                if (vcompania[xi].getDepartamento() != null) {
-                    for (int xj = 0; xj < vcompania[xi].getDepartamento().length; j++) {
+                if (vcompania[ix].contarEmpleados() > 5)
+                    // System.out.println(vcompania[i].getNombre());
+                    contarempleados = 0;
+                if (vcompania[ix].getDepartamento() != null) {
+                    for (int jx = 0; jx < vcompania[ix].getDepartamento().length; jx++) {
                         // System.out.println(vcompania[i].getDepartamento()[j].getNombre());
-                        if (vcompania[xi].getDepartamento()[xj].getEmpleado() != null) {
-                            for (int xk = 0; xk < vcompania[xi].getDepartamento()[xj].getEmpleado().length; xk++) {
-                                System.out.println("nombre comp:" + vcompania[xi].getNombre() + "nombre dpto: "
-                                        + vcompania[xi].getDepartamento()[xj].getNombre() + "emp:"
-                                        + vcompania[xi].getDepartamento()[xj].getEmpleado()[xk].getNombre());
+                        if (vcompania[ix].getDepartamento()[jx].getEmpleado() != null) {
+                            for (int k = 0; k < vcompania[i].getDepartamento()[jx].getEmpleado().length; k++) {
+                                System.out.println("nombre comp:" + vcompania[ix].getNombre() + "nombre dpto: "
+                                        + vcompania[ix].getDepartamento()[jx].getNombre() + "emp:"
+                                        + vcompania[ix].getDepartamento()[jx].getEmpleado()[k].getNombre());
                                 contarempleados = contarempleados + 1;
-    
+
                             }
                         }
                     }
+                }
+                p1[] vectorp1 = new p1[] {};
+                p1 vp1 = new p1();
+
+                if (contarempleados > 5) {
+                    vp1 = new p1();
+                    vp1.setC(vcompania[i]);
+                    vp1.setB(true);
+
+                } else {
+                    vp1 = new p1();
+                    vp1.setC(vcompania[i]);
+                    vp1.setB(false);
 
                 }
+                vectorp1[i] = vp1;
+
+                for (int xi = 0; xi < vectorp1.length; xi++) {
+                    // System.out.println(vcompania[i].getNombre());
+                    if (vectorp1[xi].getB()) {
+                        contarempleados = 0;
+                        if (vcompania[xi].getDepartamento() != null) {
+                            for (int xj = 0; xj < vcompania[xi].getDepartamento().length; xj++) {
+                                // System.out.println(vcompania[i].getDepartamento()[j].getNombre());
+                                if (vcompania[xi].getDepartamento()[xj].getEmpleado() != null) {
+                                    for (int xk = 0; xk < vcompania[xi].getDepartamento()[xj]
+                                            .getEmpleado().length; xk++) {
+                                        System.out.println("nombre comp:" + vcompania[xi].getNombre() + "nombre dpto: "
+                                                + vcompania[xi].getDepartamento()[xj].getNombre() + "emp:"
+                                                + vcompania[xi].getDepartamento()[xj].getEmpleado()[xk].getNombre());
+                                        contarempleados = contarempleados + 1;
+
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                    }
+                }
             }
-         
-
-
-
-            
-
         }
-
     }
 }
-*/

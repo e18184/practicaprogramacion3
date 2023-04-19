@@ -26,7 +26,7 @@ public class Compania {
     }
 
     public int contarEmpleados() {
-        int contarempleados =0;
+        int contarempleados = 0;
         if (this.getDepartamento() != null) {
             for (int j = 0; j < this.getDepartamento().length; j++) {
                 if (this.getDepartamento()[j].getEmpleado() != null) {
@@ -34,10 +34,11 @@ public class Compania {
                         contarempleados = contarempleados + 1;
                     }
                 }
+            }
+            /* esto es una nueva propuesta */
+
         }
-        /*esto es una nueva propuesta */
-
         return contarempleados;
-    }
 
+    }
 }
