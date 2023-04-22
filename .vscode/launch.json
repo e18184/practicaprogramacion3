@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "grafico",
+            "request": "launch",
+            "mainClass": "grafico",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
             "name": "App2",
             "request": "launch",
             "mainClass": "App2",
