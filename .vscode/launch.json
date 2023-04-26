@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JDialogo",
+            "request": "launch",
+            "mainClass": "JDialogo",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "CJwindows",
+            "request": "launch",
+            "mainClass": "CJwindows",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
             "name": "Gui00",
             "request": "launch",
             "mainClass": "Gui00",

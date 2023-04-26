@@ -1,11 +1,11 @@
 import javax.swing.*;
 import java.awt.Font;
 
-public class grafico {
+public class CJwindows {
     public static void main(String args[]) {
-        JFrame f = new JFrame("Ejemplo");
+        JFrame f = new JFrame();
 
-        f.setSize(500, 500);
+        f.setSize(200, 200);
         // 1024 x 768
         f.setLocation(1024 / 2, 768 / 2);
         JLabel l = new JLabel();
