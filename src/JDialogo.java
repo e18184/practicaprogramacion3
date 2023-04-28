@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 /* ActionListener */
 public class JDialogo implements ActionListener {
     JFrame frame;
+    JButton b1, b2;
 
     public JDialogo() {
         frame = new JFrame("Marco");
@@ -19,10 +20,13 @@ public class JDialogo implements ActionListener {
         JPanel panel = new JPanel();
         frame.add(panel);
 
-        JButton b1 = new JButton("Click");
+        b1 = new JButton("Click");
         b1.addActionListener(this);
 
         panel.add(b1);
+        b2 = new JButton("Click");
+        b2.addActionListener(this);
+        panel.add(b2);
 
     }
 
@@ -33,6 +37,14 @@ public class JDialogo implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == b1) {
+            System.out.println("boton 1");
+
+        } else if (e.getSource() == b2) {
+            System.out.println("boton 2");
+
+        }
+
         System.out.println("Se hizo un click");
 
         JDialog d = new JDialog(frame, "Dialogo");

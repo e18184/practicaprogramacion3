@@ -17,8 +17,8 @@ public class grafico {
                 l.getFont().getFontName()));
 
         f.getContentPane().add(l);
+        f.setVisible(true);
 
-        f.show();
         try {
             System.in.read();
         } catch (Exception e) {

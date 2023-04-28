@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Guia2",
+            "request": "launch",
+            "mainClass": "Guia2",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "Botones",
+            "request": "launch",
+            "mainClass": "Botones",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "PanelDatos",
+            "request": "launch",
+            "mainClass": "PanelDatos",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo11",
+            "request": "launch",
+            "mainClass": "Ejemplo11",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "PanelJRadio",
+            "request": "launch",
+            "mainClass": "PanelJRadio",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
             "name": "JDialogo",
             "request": "launch",
             "mainClass": "JDialogo",
