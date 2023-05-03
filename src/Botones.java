@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 
 public class Botones extends JFrame implements ActionListener {
     JButton b1, b2, b3, b4;
@@ -10,7 +11,12 @@ public class Botones extends JFrame implements ActionListener {
         super("Ejemplo de Layout");
         // BorderLayout
         setLayout(new BorderLayout(5, 10));
-        b1 = new JButton("boton 1");
+        // b1 = new JButton("boton 1");
+
+        b1 = new JButton("boton1", new ImageIcon("jesus.gif"));
+        // b1.setText("Boton1");
+        // b1.setIcon(icono);
+
         b1.addActionListener(this);
         add(b1, BorderLayout.EAST);
 

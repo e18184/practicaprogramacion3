@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GrupoDeRadio",
+            "request": "launch",
+            "mainClass": "GrupoDeRadio",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
             "name": "Guia2",
             "request": "launch",
             "mainClass": "Guia2",
