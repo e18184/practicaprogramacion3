@@ -22,6 +22,9 @@ public class GrupoDeRadio extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        // adicionar un grupo para definir radio button para nivel de educacion ninguno,
+        // colegio, profesional
+
     }
 
     public static void main(String[] args) {
