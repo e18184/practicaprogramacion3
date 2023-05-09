@@ -27,7 +27,7 @@ public class PrincipalColecciones {
             System.out.println("Mis hijos con iterator son:" + it.next().getNombre());
 
         }
-        Set<HijoC> otracoleccion = new HashSet();
+        Set<HijoC> otracoleccion = new HashSet<HijoC>();
         otracoleccion.add(mario);
         otracoleccion.add(mariano);
         otracoleccion.add(daniela);
@@ -43,11 +43,11 @@ public class PrincipalColecciones {
 
         HijoC[] hijosc = new HijoC[10];
         // una forma
-        hijosc = (HijoC[]) carlos.getHijos().toArray();
+        // hijosc = (HijoC[]) carlos.getHijos().toArray();
 
         // ejemplo de casteo
         int a;
-        Byte b;
+        Byte b = 0;
         // a = b;
         a = (int) b;
 
