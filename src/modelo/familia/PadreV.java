@@ -5,7 +5,7 @@ public class PadreV {
     private String ap;
     private String am;
     private int edad;
-    private HijoV[] hijos = new HijoV[10];
+    private HijoV[] hijos = new HijoV[999];
 
     public String getNombre() {
         return nombre;
