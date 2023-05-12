@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Mapas",
+            "request": "launch",
+            "mainClass": "Mapas",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "BookListRenderer",
+            "request": "launch",
+            "mainClass": "modelo.libro.BookListRenderer",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
+            "name": "VisorLibros",
+            "request": "launch",
+            "mainClass": "VisorLibros",
+            "projectName": "practicaprogramacion3_b9675b0d"
+        },
+        {
+            "type": "java",
             "name": "PrincipalColecciones",
             "request": "launch",
             "mainClass": "PrincipalColecciones",
