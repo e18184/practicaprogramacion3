@@ -13,6 +13,8 @@ public class Mapas {
         HijoC mariano = new HijoC("mariano", "copa", "rios");
         HijoC jose = new HijoC("jose", "sadfa", "sfda");
         HijoC daniela = new HijoC("daniela", "perez", "sea");
+        HijoC felipe = new HijoC("felipe", "copa", "rios");
+
         /*
          * Set<HijoC> hijos = new HashSet<HijoC>();
          * hijos
@@ -31,6 +33,7 @@ public class Mapas {
         mapah.put("hijo1", mario);
         mapah.put("hijo2", mariano);
         mapah.put("hijo3", jose);
+        mapah.put("hijo4", felipe);
 
         for (Entry<String, HijoC> a : mapah.entrySet()) {
 
@@ -45,13 +48,15 @@ public class Mapas {
         }
 
         /* Verificar si una llave esta en el mapa */
-        HijoC felipe = new HijoC("felipe", "copa", "rios");
+        HijoC otro = felipe;
 
-        if (mapa.containsValue(felipe)) {
+        if (mapah.containsValue(otro)) {
             System.out.println("se encuentra");
         } else {
             System.out.println("No se encuentra");
         }
+
+        /* Asignar los valores de un mapa a un list* */
 
     }
 }
