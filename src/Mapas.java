@@ -57,6 +57,7 @@ public class Mapas {
         }
 
         /* Asignar los valores de un mapa a un list* */
+        /* Set asignar los valores de un mapa */
 
     }
 }
