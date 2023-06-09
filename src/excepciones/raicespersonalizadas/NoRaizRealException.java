@@ -1,7 +1,5 @@
 package excepciones.raicespersonalizadas;
 
-import java.util.*;
-
 // representa la excepción: ecuación no tiene solución real
 class NoRaizRealException extends Exception {
     private double a, b, c;
